@@ -29,3 +29,21 @@ Aplikasi ini dikembangkan oleh:
 
 Faris  
 Mahasiswa - Proyek Skripsi
+
+## Cara Menjalankan Aplikasi
+
+Berikut langkah-langkah untuk menjalankan aplikasi KepengenDessbox:
+
+1. Clone repository ini ke komputer Anda.
+
+   git clone https://github.com/username/KepengenDessbox.git
+
+2. Buka project menggunakan Android Studio.
+
+3. Pastikan Android Studio telah terinstall dan SDK Android sudah terkonfigurasi dengan benar.
+
+4. Hubungkan perangkat Android atau gunakan Android Emulator.
+
+5. Jalankan aplikasi dengan menekan tombol **Run** pada Android Studio.
+
+6. Aplikasi KepengenDessbox akan terinstall dan dapat digunakan pada perangkat Android.
