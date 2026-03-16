@@ -1,0 +1,5 @@
+<!-- res/drawable/btn_bg_cancel.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#D32F2F" />
+    <corners android:radius="25dp" />
+</shape>

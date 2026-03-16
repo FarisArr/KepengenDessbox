@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F5F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Toolbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Pembayaran"
+                android:textColor="@color/brown"
+                android:textSize="24sp"
+                android:fontFamily="@font/biryani_extrabold" />
+        </LinearLayout>
+
+        <!-- ✅ LAYER: Total Bayar & Batas Waktu - Full Width -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/background_card"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Teks: Total yang Harus Dibayar -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total yang Harus Dibayar"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/biryani_bold"
+                android:layout_marginBottom="4dp" />
+
+            <!-- Total Bayar -->
+            <TextView
+                android:id="@+id/txtTotalBayar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:textSize="20sp"
+                android:textColor="@color/brown"
+                android:textStyle="bold"
+                android:fontFamily="@font/biryani_bold" />
+
+            <!-- Batas Waktu -->
+            <TextView
+                android:id="@+id/txtBatasWaktu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bayar dalam: 15 menit"
+                android:textSize="16sp"
+                android:textColor="@color/red"
+                android:fontFamily="@font/biryani_bold"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <!-- ✅ Informasi Pembayaran - Full Width -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/background_card"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Isi tetap sama -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Rekening Tujuan"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/biryani_regular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FARIS HIDAYAT ARRAHMAN"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/biryani_bold"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Metode Pembayaran"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/biryani_regular" />
+
+            <TextView
+                android:id="@+id/txtMetode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BCA Virtual Account"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/biryani_bold"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Virtual Account"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/biryani_regular" />
+
+            <TextView
+                android:id="@+id/txtVaNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3901085717959668"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/biryani_bold"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnSalin"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Salin Nomor"
+                android:background="@drawable/btn_bg_design"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:paddingHorizontal="10dp"
+                android:layout_gravity="end" />
+        </LinearLayout>
+
+        <!-- Instruksi Pembayaran (Dropdown) -->
+        <LinearLayout
+            android:id="@+id/layoutInstruksi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/background_card"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Bar Judul (Klik untuk Expand) -->
+            <LinearLayout
+                android:id="@+id/layoutJudulInstruksi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Petunjuk Pembayaran Ke Aplikasi Dana"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/biryani_bold" />
+
+                <!-- Panah Kanan -->
+                <ImageView
+                    android:id="@+id/imgArrow"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_chevron_right_24"
+                    android:contentDescription="Expand" />
+            </LinearLayout>
+
+            <!-- Isi Instruksi (Default: GONE) -->
+            <TextView
+                android:id="@+id/txtInstruksi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/biryani_regular"
+                android:lineSpacingExtra="4dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Catatan -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Setelah pembayaran, pesanan akan diproses. Anda akan menerima notifikasi saat pesanan dikirim."
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/biryani_regular"
+            android:gravity="center" />
+
+        <!-- Tombol OK -->
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="OK"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:background="@drawable/btn_bg_design"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- activity_pembayaran.xml -->
+        <CheckBox
+            android:id="@+id/cbSudahBayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Saya sudah melakukan pembayaran"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/biryani_regular" />
+    </LinearLayout>
+</ScrollView>

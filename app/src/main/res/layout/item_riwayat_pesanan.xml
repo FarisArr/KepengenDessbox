@@ -1,0 +1,59 @@
+<!-- res/layout/item_riwayat_pesanan.xml -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:id="@+id/llItemRiwayat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/txtNamaPesanan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="x1 Item"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/biryani_black"
+            android:focusable="false"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/txtTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18 Des 2021"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="8dp"
+            android:focusable="false"
+            android:clickable="false" />
+
+        <ImageView
+            android:id="@+id/imgArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrow_right"
+            android:tint="@color/black"
+            android:contentDescription="Lihat detail"
+            android:focusable="false"
+            android:clickable="false" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

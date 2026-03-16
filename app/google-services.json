@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "31034393538",
+    "project_id": "kepengendessboxapp-db83d",
+    "storage_bucket": "kepengendessboxapp-db83d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31034393538:android:93faa86f6fff18dc7f0c5b",
+        "android_client_info": {
+          "package_name": "com.example.kepengendessboxapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWgnaYbPnzBsVYCRtejztokT0nKXd4US8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

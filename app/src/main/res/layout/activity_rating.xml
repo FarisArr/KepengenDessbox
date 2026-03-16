@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_rating.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_detail_pesanan">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beri Ulasan"
+        android:textSize="24sp"
+        android:textColor="@color/brown"
+        android:fontFamily="@font/biryani_extrabold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berikan rating Anda"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/biryani_regular"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp">
+        <ImageView android:id="@+id/star1" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/star_outline" android:layout_margin="4dp" />
+        <ImageView android:id="@+id/star2" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/star_outline" android:layout_margin="4dp" />
+        <ImageView android:id="@+id/star3" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/star_outline" android:layout_margin="4dp" />
+        <ImageView android:id="@+id/star4" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/star_outline" android:layout_margin="4dp" />
+        <ImageView android:id="@+id/star5" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/star_outline" android:layout_margin="4dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tulis ulasan Anda"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/biryani_regular"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/edtReview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/background_card"
+        android:padding="12dp"
+        android:gravity="start"
+        android:hint="Tulis pengalaman Anda..."
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnSubmitRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kirim Ulasan"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@drawable/btn_bg_design" />
+
+</LinearLayout>

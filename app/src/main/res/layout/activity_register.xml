@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_register berhasil -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+  <!-- Background  -->
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop"
+      android:src="@drawable/desain_2" />
+
+  <!-- Subjudul 1  -->
+  <TextView
+      android:id="@+id/textView7"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:fontFamily="@font/biryani_extrabold"
+      android:text="Buat Akun"
+      android:textColor="@color/white"
+      android:textSize="36dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.180" />
+
+  <!-- Subjudul 2  -->
+  <TextView
+      android:id="@+id/textView8"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:fontFamily="@font/biryani_extrabold"
+      android:text="Barumu !"
+      android:textColor="@color/white"
+      android:textSize="36dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+  <!-- Input Nama Lengkap  -->
+  <EditText
+      android:id="@+id/edtRegFullName"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:backgroundTint="@color/gray"
+      android:layout_marginBottom="180dp"
+      android:drawableLeft="@drawable/baseline_person_24"
+      android:drawablePadding="12dp"
+      android:hint="Nama Lengkap"
+      android:inputType="textPersonName"
+      android:textColor="@color/black"
+      android:textColorHint="@color/black"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView8"
+      app:layout_constraintWidth_percent=".9" />
+
+  <!-- Input No.Whatsapp  -->
+  <EditText
+      android:id="@+id/edtRegPhone"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="@color/gray"
+      android:drawableLeft="@drawable/baseline_phone_24"
+      android:drawablePadding="12dp"
+      android:hint="Nomor Whatsapp"
+      android:inputType="phone"
+      android:minHeight="48dp"
+      android:textColor="@color/black"
+      android:textColorHint="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edtRegFullName"
+      app:layout_constraintWidth_percent=".9"/>
+
+  <!-- Input Email  -->
+  <EditText
+      android:id="@+id/edtRegEmail"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="@color/gray"
+      android:drawableLeft="@drawable/baseline_email_24"
+      android:drawablePadding="12dp"
+      android:hint="Masukkan Email"
+      android:inputType="textEmailAddress"
+      android:minHeight="48dp"
+      android:textColor="@color/black"
+      android:textColorHint="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edtRegPhone"
+      app:layout_constraintWidth_percent=".9"/>
+
+  <!-- Input Passowrd  -->
+  <EditText
+      android:id="@+id/edtRegPass"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="@color/gray"
+      android:drawableLeft="@drawable/baseline_lock_24"
+      android:drawableRight="@drawable/eye"
+      android:tag="password_shown"
+      android:drawablePadding="12dp"
+      android:hint="Masukkan Password"
+      android:inputType="textPassword"
+      android:minHeight="48dp"
+      android:textColor="@color/black"
+      android:textColorHint="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edtRegEmail"
+      app:layout_constraintWidth_percent=".9"/>
+
+  <!-- Input Konfirmasi Password  -->
+  <EditText
+      android:id="@+id/edtRegConPass"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:backgroundTint="@color/gray"
+      android:drawableLeft="@drawable/baseline_lock_24"
+      android:drawableRight="@drawable/eye"
+      android:tag="password_shown"
+      android:drawablePadding="12dp"
+      android:hint="Konfirmasi Password"
+      android:inputType="textPassword"
+      android:minHeight="48dp"
+      android:textColor="@color/black"
+      android:textColorHint="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edtRegPass"
+      app:layout_constraintWidth_percent=".9"/>
+
+  <!-- Button Register  -->
+  <Button
+      android:id="@+id/btnRegister"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:background="@drawable/btn_bg_design"
+      android:onClick="register"
+      android:padding="14dp"
+      android:text="REGISTER"
+      android:textAllCaps="false"
+      android:textColor="@color/white"
+      android:textSize="18dp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edtRegConPass"
+      app:layout_constraintVertical_bias="0.387"
+      app:layout_constraintWidth_percent="0.8"/>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>

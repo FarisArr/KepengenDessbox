@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KepengenDessbox</string>
+    <string name="imgbb_api_key">4d2ee81bf12521e52f9f8727af81e331</string>
+    <string name="prompt_provinsi">Pilih Provinsi</string>
+    <string name="prompt_kota">Pilih Kabupaten/Kota</string>
+    <string name="prompt_kecamatan">Pilih Kecamatan</string>
+    <string name="prompt_kode_pos">Pilih Kode Pos</string>
+</resources>
