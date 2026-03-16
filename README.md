@@ -33,5 +33,4 @@ Mahasiswa - Proyek Skripsi
 ## Cara Menjalankan Aplikasi
 
 1. Clone repository ini ke komputer Anda.
-
    git clone https://github.com/FarisArr/KepengenDessbox.git
